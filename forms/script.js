@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", function() {
         firstInputs.forEach(input => {
             if (input.value.trim() === "") {
                 allFilled = false;
+                input.classList.add("error"); // Add error class to highlight empty fields
+            } else {
+                input.classList.remove("error");
             }
         });
 
@@ -31,6 +34,9 @@ document.addEventListener("DOMContentLoaded", function() {
         secondInputs.forEach(input => {
             if (input.value.trim() === "") {
                 allFilled = false;
+                input.classList.add("error"); // Add error class to highlight empty fields
+            } else {
+                input.classList.remove("error");
             }
         });
 
